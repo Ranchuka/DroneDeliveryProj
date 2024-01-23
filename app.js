@@ -47,7 +47,7 @@ app.post('/calculate-route', async (req, res)=>{
     }
 
 });
-
+module.exports =app;
 function routeCalculated(predecessor,endPoint){
 
     const traversedArray = [];
