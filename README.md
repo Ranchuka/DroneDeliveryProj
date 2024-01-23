@@ -40,13 +40,8 @@ O cálculo da rota mais rápida é feito utilizando o algoritmo de Dijkstra. Est
 
 #### Como Usar
 ```bash
-git clone URL_DO_REPOSITORIO
+git clone https://github.com/Ranchuka/DroneDeliveryProj.git
 cd drone-delivery-backend
 npm install
 npm start
 ```
-
-
-
-
-
