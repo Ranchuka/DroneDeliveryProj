@@ -11,9 +11,6 @@ app.listen(8000, () => {
   console.log('server is runing in  http://localhost:$'+port);
 });
 
-
-
-
 app.post('/calculate-route', async (req, res)=>{
 
     try{
