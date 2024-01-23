@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json()); 
 
 app.listen(8000, () => {
-  console.log('server is runing in  http://localhost:$'+port);
+  console.log('server is runing in  http://localhost:'+port);
 });
 
 app.post('/calculate-route', async (req, res)=>{
@@ -33,6 +33,8 @@ app.post('/calculate-route', async (req, res)=>{
         const routePickup = routeCalculated(resultPickup.predecessor,pickupPosition);
         const routeDelivery = routeCalculated(resultDelivery.predecessor,deliveryPoint);
         const totalTime =resultPickup.distances[pickupPosition]+resultDelivery.distances[deliveryPoint];
+
+        
        const response = {
         route: routePickup+','+routeDelivery,
         timer: totalTime.toFixed(2),
