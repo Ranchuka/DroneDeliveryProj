@@ -38,6 +38,9 @@ app.post('/calculate-route', async (req, res)=>{
        const response = {
         route: routePickup+','+routeDelivery,
         timer: totalTime.toFixed(2),
+        startPosition: startPosition,
+        pickupPosition: pickupPosition,
+        deliveryPoint: deliveryPoint,
        };
        console.log(response);
 
